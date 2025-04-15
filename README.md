@@ -2,8 +2,7 @@
 Code necessary to make LED blink and to debounce button to make it work properly
 
 #include <EasyButton.h>
-#include <Adafruit_NeoPixel.h>
-
+#include <Adafruit_NeoPixel.h>    // library download needed is Adafruit_NeoPixel.h
 const int buttonPin = 7;
 const int ledPin = 10;
 const int numberOfPixels = 4;
@@ -11,7 +10,7 @@ const int delayVal = 500;
 
 bool lastButtonState = LOW;
 
-Adafruit_NeoPixel pixels(numberOfPixels, ledPin, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel pixels(numberOfPixels, ledPin, NEO_GRB + NEO_KHZ800); 
 
 #define BAUDRATE 115200
 
